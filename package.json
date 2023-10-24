@@ -1,4 +1,4 @@
-{
+{ 
   "name": "fullcalendar",
   "version": "6.1.9",
   "title": "FullCalendar Standard Bundle",
@@ -12,6 +12,7 @@
     "@fullcalendar/multimonth": "~6.1.9",
     "@fullcalendar/timegrid": "~6.1.9"
   },
+  "build":"azure",
   "type": "module",
   "keywords": [
     "calendar",
