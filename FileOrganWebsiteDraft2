@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Senior Design Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <style>
+        body, h1, h2, h3, h4, h5 {
+            font-family: "Poppins", sans-serif;
+            background: #4F583D;
+            font-style: #FFF;
+            color: #FFF;
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        .w3-half img {
+            margin-bottom: -6px;
+            margin-top: 16px;
+            opacity: 0.8;
+            cursor: pointer
+        }
+
+            .w3-half img:hover {
+                opacity: 1
+            }
+    </style>
+</head>
+<body>
+
+    <!-- Color codes: #8A584C #8FA6AC #F5EACF #CEB793 #85865F #4F583D -->
+
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index: 3; width: 300px; font-weight: bold; background:#85865F; font: #fff; " id="mySidebar">
+        <br>
+        <body style="background-color: p#8FA6AC;">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+            <div class="w3-container">
+                <h3 class="w3-padding-64"><b>FileOrgan<br></b></h3>
+            </div>
+            <div class="w3-bar-block">
+                <body style="background-color: #CEB793;">
+                    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+                    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Calendar</a>
+                    <!-- <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a> -->
+                    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Our Team</a>
+                    <!--  <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a> -->
+                    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+            </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large #8A584C w3-xlarge w3-padding">
+        <!-- w3-red -->
+        <a href="javascript:void(0)" class="w3-button #8FA6AC w3-margin-right" onclick="w3_open()">☰</a> <!-- w3-red -->
+        <span>FileOrgan Senior Design Project Showcase</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px; color: #fff">
+        <body style="background-color: #CEB793;">
+
+            <!-- Header w3-text-red -->
+            <div class="w3-container" style="margin-top:80px" id="showcase">
+                <h1 class="w3-jumbo"><b>FileOrgan</b></h1>
+                <h1 class="w3-xxxlarge #8A584C"><b>Senior Design Project Showcase</b></h1> <!-- w3-text-red -->
+                <hr style="width: 50px; border: 5px #8FA6AC" class="w3-round"> <!-- solid red -->
+            </div>
+
+            <!-- Photo grid -->
+            <div class="w3-row-padding">
+                <div class="w3-half">
+                    <!--<img src="/FileOrgan1.png" style="width:100%" onclick="onClick(this)" alt="Calendar Example">-->
+                    <img src="Fall2023/FileOrgan1.png" alt="Project Pic 1">
+                    <img src="./FileOrgan2.png" style="width:100%" onclick="onClick(this)" alt="Project Pic 2">
+                    <img src="./FileOrgan3.png" style="width:100%" onclick="onClick(this)" alt="Project Pic 3">
+                </div>
+
+        <div class="w3-half">
+            <img src="./FileOrgan4.png" style="width:100%" onclick="onClick(this)" alt="Project Pic 4">
+            <img src="./FileOrgan5.png" style="width:100%" onclick="onClick(this)" alt="Project Pic 5">
+            <img src="./FileOrgan7.png" style="width:100%" onclick="onClick(this)" alt="Project Pic 6">
+        </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+                    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+                        <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+                        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                            <img id="img01" class="w3-image">
+                            <p id="caption"></p>
+                        </div>
+                    </div>
+
+                    <!-- Designers -->
+                    <div class="w3-container" id="designers" style="margin-top:75px">
+                        <h1 class="w3-xxxlarge"><b>Our team.</b></h1>
+                        <hr style="width:50px;border:5px" class="w3-round">
+
+                    </div>
+
+                    <!-- The Team -->
+                    <div class="w3-row-padding w3-grayscale" color: #fff">
+                        <div class="w3-col m4 w3-margin-bottom">
+                            <div class="w3-light-grey">
+                                <div class="w3-container">
+                                    <h3>Abigail Rotherham</h3>
+                                    <!-- <p class="w3-opacity">CEO & Founder</p> -->
+                                    <p>FileOrgan team.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w3-col m4 w3-margin-bottom">
+                            <div class="w3-light-grey">
+                                <div class="w3-container">
+                                    <h3>Emma Benson</h3>
+                                    <!-- <p class="w3-opacity">CEO & Founder</p> -->
+                                    <p>FileOrgan team.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w3-col m4 w3-margin-bottom">
+                            <div class="w3-light-grey">
+                                <div class="w3-container">
+                                    <h3>Julia Wayne</h3>
+                                    <!-- <p class="w3-opacity">CEO & Founder</p> -->
+                                    <p>FileOrgan team.<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w3-col m4 w3-margin-bottom">
+                            <div class="w3-light-grey">
+                                <div class="w3-container">
+                                    <h3>Udeh Ndukwe</h3>
+                                    <!-- <p class="w3-opacity">CEO & Founder</p> -->
+                                    <p>FileOrgan team.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w3-col m4 w3-margin-bottom">
+                            <div class="w3-light-grey">
+                                <div class="w3-container">
+                                    <h3>Jackson Lawrence</h3>
+                                    <!-- <p class="w3-opacity">CEO & Founder</p> -->
+                                    <p>FileOrgan team.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="w3-container" id="contact" style="margin-top:75px">
+                        <h1 class="w3-xxxlarge"><b>Contact.</b></h1>
+                        <hr style="width:50px;border:5px" class="w3-round">
+                        <p>Contact the FileOrgan team.</p>
+                        <form action="/action_page.php" target="_blank">
+                            <div class="w3-section">
+                                <label>Name</label>
+                                <input class="w3-input w3-border" type="text" name="Name" required>
+                            </div>
+                            <div class="w3-section">
+                                <label>Email</label>
+                                <input class="w3-input w3-border" type="text" name="Email" required>
+                            </div>
+                            <div class="w3-section">
+                                <label>Message</label>
+                                <input class="w3-input w3-border" type="text" name="Message" required>
+                            </div>
+                            <button type="submit" class="w3-button w3-block w3-padding-large w3-margin-bottom">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- End page content -->
+                </div>
+
+
+    <script>// Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }</script>
+
+</body>
+</html>
